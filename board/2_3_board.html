@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>board</title>
+    <style>
+      body {
+        margin: 40px;
+        background-color: rgb(20, 20, 20);
+      }
+
+      h1 {
+        color: white;
+        margin-bottom: 10px;
+      }
+
+      p.description {
+        color: #888;
+        margin-bottom: 30px;
+      }
+
+      h2 {
+        font-size: 15px;
+        color: rgb(85, 85, 255);
+        margin-bottom: 15px;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        border-top: 2px solid #4e4e4e;
+        font-size: 15px;
+      }
+
+      th,
+      td {
+        border-bottom: 1px solid #4e4e4e;
+        border-right: 1px solid #4e4e4e;
+        background-color: #313131;
+        color: white;
+        padding: 12px 10px;
+        text-align: center;
+      }
+
+      th {
+        background-color: #272727;
+        color: white;
+        font-weight: 600;
+        text-align: center;
+      }
+
+      td {
+        text-align: center;
+      }
+
+      td.title {
+        text-align: center;
+      }
+
+      th:first-child,
+      td:first-child {
+        border-left: 1px solid #4e4e4e;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>게시판 글목록</h1>
+    <p class="description">글목록 페이지를 만들어 보세요!</p>
+
+    <h2>1. HTML 제작을 위한 컨텐츠</h2>
+
+    <table>
+      <thead>
+        <tr>
+          <th>번호</th>
+          <th>제목</th>
+          <th>작성자</th>
+          <th>작성일</th>
+          <th>조회수</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>2</td>
+          <td class="title">세일즈포스에서 수강생분들에게 알려드립니다.</td>
+          <td>홍길동</td>
+          <td>2023.04.25</td>
+          <td>999</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td class="title">AI CRM 1기 모집</td>
+          <td>홍길동</td>
+          <td>2023.03.24</td>
+          <td>999</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

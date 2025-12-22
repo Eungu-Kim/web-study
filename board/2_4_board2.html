@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>board2</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        margin: 10px;
+      }
+
+      .sub {
+        color: #636363;
+        margin-top: 10px;
+        margin-bottom: 20px;
+      }
+      .container {
+        max-width: 800px;
+        margin: 10px;
+        background-color: #fff;
+      }
+
+      .form {
+        border-top: 2px solid rgb(0, 0, 0);
+      }
+
+      .form-group {
+        display: flex;
+        border: 1px solid #eee;
+        align-items: stretch;
+      }
+
+      .form-group label,
+      .file-group label {
+        width: 120px;
+        font-weight: bold;
+        background-color: #dbdbdb;
+        border-right: 1px solid #ccc;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        color: #000000;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+        margin: 0;
+        padding: 20px;
+      }
+
+      .form-group input[type="text"],
+      .form-group input[type="email"],
+      .form-group input[type="password"],
+      .form-group select,
+      .form-group textarea {
+        flex: 1;
+        padding: 8px;
+        border: 1px solid #dddddd;
+        align-items: stretch;
+        border-radius: 5px;
+        margin: 5px 15px;
+        font-size: 14px;
+        box-sizing: content-box;
+      }
+
+      .form-group select {
+        width: 10px;
+        padding: 8px 34px 8px 10px; /* 위아래 동일 padding */
+        border: 1px solid #dddddd;
+        border-radius: 5px;
+        font-size: 14px;
+        box-sizing: border-box;
+        margin: 5px 15px;
+        background-color: #fff;
+      }
+
+      textarea {
+        min-height: 200px;
+        resize: none;
+        font-size: 14px;
+      }
+
+      .file-group {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        border-bottom: 1px solid #eee;
+        border-right: 1px solid #eee;
+        border-left: 1px solid #eee;
+      }
+
+      .file-group input[type="file"] {
+        margin-left: 10px;
+        padding: 8px;
+      }
+
+      .button-group {
+        text-align: right;
+      }
+
+      .button-group button {
+        padding: 8px 16px;
+        margin-left: 10px;
+        margin-top: 10px;
+        font-size: 14px;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+      }
+
+      .button-list {
+        background-color: #f0f0f0;
+        color: #000;
+      }
+      .button-reset {
+        background-color: #f0f0f0;
+        color: #000;
+      }
+      .button-submit {
+        background-color: #f0f0f0;
+        color: #000;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="main-title">글쓰기</h1>
+      <p class="sub">내용을 입력해주세요</p>
+      <form class="form">
+        <div class="form-group">
+          <label for="category">카테고리</label>
+          <select id="category" name="category">
+            <option value="general">일반</option>
+            <option value="notice">공지</option>
+            <option value="qna">Q&A</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="title">제목</label>
+          <input
+            type="text"
+            id="title"
+            name="title"
+            placeholder="제목을 입력하세요"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="content">내용</label>
+          <textarea
+            id="content"
+            name="content"
+            placeholder="내용을 입력하세요"
+          ></textarea>
+        </div>
+
+        <div class="file-group">
+          <label for="file">파일첨부</label>
+          <input type="file" id="file" name="file" />
+        </div>
+
+        <div class="button-group">
+          <button type="button" class="button-list">목록</button>
+          <button type="reset" class="button-reset">초기화</button>
+          <button type="submit" class="button-submit">작성</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
