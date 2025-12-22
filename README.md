@@ -3,17 +3,6 @@
 Java Web / Servlet / JSP 기반 웹 프로그래밍 학습 레포지토리입니다.  
 기본 HTML 실습부터 Servlet + JDBC CRUD 프로젝트까지 단계별로 정리되어 있습니다.
 
-### Tech Stack
-
-- Java
-- Servlet / JSP
-- Apache Tomcat (Local Server)
-- JDBC
-- Oracle Database
-
-※ 로컬 Tomcat 서버 환경에서 Servlet을 직접 배포하고  
-JDBC를 통해 Oracle Database와 연동하는 구조로 학습 진행
-
 ---
 
 ## ⭐ Main Project
@@ -22,13 +11,23 @@ JDBC를 통해 Oracle Database와 연동하는 구조로 학습 진행
 
 Servlet + JDBC 기반 이메일 리스트 CRUD 학습 프로젝트
 
+- **Tech Stack**
+
+  - Java
+  - Servlet / JSP
+  - Apache Tomcat (Local Server)
+  - JDBC
+  - Oracle Database
+
+  ※ 로컬 Tomcat 서버 환경에서 Servlet을 직접 배포하고  
+     JDBC를 통해 Oracle Database와 연동하는 구조로 학습 진행
+
 - **주요 기능**
 
   - 이메일 등록 / 조회 / 삭제 (CRUD)
   - Servlet + DAO + VO 구조
   - JSP 기반 View 분리
   - JDBC 커넥션 매니저(DBConnectionMgr) 사용
-  - Tomcat 환경에서 Servlet을 배포하고 Oracle DB와 JDBC로 연동
 
 - **구성 요약**
 ```text
@@ -55,7 +54,7 @@ Servlet + JDBC 기반 이메일 리스트 CRUD 학습 프로젝트
 - **개발 환경**
 
   - Windows
-  - IntelliJ
+  - IntelliJ IDEA
   - Tomcat 9
   - Oracle XE
 
