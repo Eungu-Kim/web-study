@@ -22,12 +22,14 @@ Servlet + JDBC 기반 이메일 리스트 CRUD 학습 프로젝트
   ※ 로컬 Tomcat 서버 환경에서 Servlet을 직접 배포하고  
      JDBC를 통해 Oracle Database와 연동하는 구조로 학습 진행
 
+
 - **주요 기능**
 
   - 이메일 등록 / 조회 / 삭제 (CRUD)
   - Servlet + DAO + VO 구조
   - JSP 기반 View 분리
   - JDBC 커넥션 매니저(DBConnectionMgr) 사용
+
 
 - **구성 요약**
 ```text
@@ -44,12 +46,14 @@ Servlet + JDBC 기반 이메일 리스트 CRUD 학습 프로젝트
   └─ lib
 ```
 
+
 - **학습 포인트**
 
   - Java Web 기본 MVC 구조 이해
   - Servlet 기반 요청 / 응답 처리 흐름 학습
   - JDBC를 이용한 Oracle DB 연동 경험
   - Git 커밋 단위 관리 및 히스토리 정리
+
 
 - **개발 환경**
 
