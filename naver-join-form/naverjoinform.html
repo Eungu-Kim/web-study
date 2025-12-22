@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>naver join form</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      img {
+        width: 110px;
+        display: block;
+        margin: 0 auto;
+        padding-top: 30px;
+        padding-right: 160px;
+        padding-bottom: 5px;
+      }
+
+      .first-content {
+        display: block;
+        border: 1px solid #969696;
+        width: 280px;
+        height: 185px;
+        margin: 0 auto;
+        margin-top: 10px;
+        padding-top: 7px;
+        padding-bottom: px;
+        border-radius: 8px;
+      }
+
+      .second-content {
+        display: block;
+        border: 1px solid #969696;
+        width: 280px;
+        height: 255px;
+        margin: 0 auto;
+        margin-top: 10px;
+        padding-top: 10px;
+        border-radius: 8px;
+      }
+
+      .first-content input,
+      .second-content input {
+        font-size: 15px;
+        color: #333;
+        width: 240px;
+        border: none;
+        outline: none;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 15px;
+      }
+
+      .second-content select {
+        font-size: 15px;
+        width: 260px;
+        border: none;
+        outline: none;
+        margin-left: 10px;
+        margin-bottom: 15px;
+        padding-top: 10px;
+      }
+
+      select {
+        font-size: 15px;
+        width: 310px;
+        border: none;
+        margin-left: 10px;
+        margin-top: 1px;
+        margin-bottom: 5px;
+        padding: 10px;
+        padding-bottom: 5px;
+      }
+
+      select:valid {
+        color: #000;
+      }
+
+      select:invalid {
+        color: #808080;
+      }
+
+      .first-content p {
+        border-bottom: 1px solid #969696;
+        margin-bottom: 6px;
+      }
+
+      .second-content p {
+        border-bottom: 1px solid #969696;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="01 NAVER Logo_Green.png" alt="naver_logo" />
+    <form id="join-form" method="GET" action="join.jsp">
+      <div class="first-content">
+        <p id="userid">
+          <input type="text" name="userid" placeholder="아이디" />
+        </p>
+        <p id="password">
+          <input type="password" name="password" placeholder="비밀번호" />
+        </p>
+        <input type="email" name="email" id="email" placeholder="이메일 주소" />
+      </div>
+
+      <div class="second-content">
+        <p id="username">
+          <input type="text" name="username" placeholder="이름" />
+        </p>
+        <p id="birth">
+          <input type="text" name="birth" placeholder="생년월일" />
+        </p>
+        <p id="telhome">
+          <select name="telhome" required>
+            <option value="" disabled selected>통신사 선택</option>
+            <option value="SKT">SKT</option>
+            <option value="KT">KT</option>
+            <option value="LG">LG</option>
+          </select>
+        </p>
+        <input type="tel" name="tel" id="tel" placeholder="전화번호" />
+      </div>
+    </form>
+  </body>
+</html>
