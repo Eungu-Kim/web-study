@@ -21,6 +21,7 @@ Servlet + JDBC 기반 이메일 리스트 CRUD 학습 프로젝트
   - JDBC 커넥션 매니저(DBConnectionMgr) 사용
 
 - **구성 요약**
+```text
   servlet-jdbc-emaillist
   ├─ src/main
   │ ├─ DBConnectionMgr.java
@@ -32,6 +33,7 @@ Servlet + JDBC 기반 이메일 리스트 CRUD 학습 프로젝트
   │ ├─ index.jsp
   │ └─ WEB-INF/web.xml
   └─ lib
+```
 
 - **학습 포인트**
 - Java Web 기본 MVC 구조 이해
