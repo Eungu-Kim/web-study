@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 100%;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 30px;
+            font-size: 2em;
+            font-weight: 600;
+        }
+
+        .nav-list {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .nav-button {
+            display: block;
+            padding: 18px 25px;
+            background: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 16px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(52, 152, 219, 0.2);
+        }
+
+        .nav-button:hover {
+            background: #2980b9;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(52, 152, 219, 0.3);
+        }
+
+        .nav-button:active {
+            transform: translateY(0);
+            box-shadow: 0 2px 4px rgba(52, 152, 219, 0.2);
+        }
+
+        /* 방문한 링크도 같은 색상 유지 */
+        .nav-button:visited {
+            color: white;
+            background: #3498db;
+        }
+
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px 20px;
+            }
+
+            h1 {
+                font-size: 1.5em;
+            }
+
+            .nav-button {
+                padding: 15px 20px;
+                font-size: 14px;
+            }
+        }
+
+        p {
+            height: 20px;
+            color: #999999;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>📋 Navigation</h1>
+    <div class="nav-list">
+        <a href="/oracle/authortable/viewAuthorTable.jsp" class="nav-button">View Author Table</a>
+        <a href="/oracle/authortable/insertForm.jsp" class="nav-button">Insert Form</a>
+        <a href="/oracle/authortable/authorApp.jsp" class="nav-button">🍱 Author App</a>
+        <a href="/oracle/authortable2/authorApp.jsp" class="nav-button">🍱 Author App2</a>
+        <p>---------------------------------------------------------------------------------</p>
+        <a href="/oracle/authortable/hello.html" class="nav-button">Hello HTML</a>
+        <a href="/oracle/authortable/hello.jsp" class="nav-button">Hello JSP</a>
+        <p>---------------------------------------------------------------------------------</p>
+        <a href="/home/work10_21/lotto.html" class="nav-button">🍱 Lotto Lunch Mate</a>
+        <p>---------------------------------------------------------------------------------</p>
+        <a href="/helloWeb/insert.jsp" class="nav-button">Insert</a>
+        <p>---------------------------------------------------------------------------------</p>
+    </div>
+</div>
+</body>
+</html>
