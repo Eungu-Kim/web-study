@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>점심 메이트 추첨기</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            color: white;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        #shuffleBtn {
+            background-color: #ff6b6b;
+            color: white;
+            border: none;
+            padding: 15px 40px;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        #shuffleBtn:hover {
+            background-color: #ff5252;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+        }
+
+        #shuffleBtn:active {
+            transform: translateY(0);
+        }
+
+        .groups-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .group-card {
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            cursor: pointer;
+            transition: all 0.3s;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .group-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+        }
+
+        .group-card.selected {
+            background: #2c3e50;
+            color: white;
+            transform: translateY(-5px);
+        }
+
+        .group-card h2 {
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            color: #667eea;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 10px;
+        }
+
+        .group-card.selected h2 {
+            color: #ffd93d;
+            border-bottom: 2px solid #ffd93d;
+        }
+
+        .group-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        .group-table tr {
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .group-card.selected .group-table tr {
+            border-bottom: 1px solid #555;
+        }
+
+        .group-table tr:last-child {
+            border-bottom: none;
+        }
+
+        .group-table td {
+            padding: 12px 5px;
+            text-align: left;
+        }
+
+        .member-number {
+            width: 40px;
+            font-weight: bold;
+            color: #667eea;
+            text-align: center;
+        }
+
+        .group-card.selected .member-number {
+            color: #ffd93d;
+        }
+
+        .member-name {
+            font-size: 1.1em;
+        }
+
+        .footer {
+            text-align: center;
+            color: white;
+            margin-top: 40px;
+            font-size: 1.3em;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2em;
+            }
+
+            .groups-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h1>🍱 점심 메이트 추첨기</h1>
+        <button id="shuffleBtn">Shuffle</button>
+    </div>
+
+    <div class="groups-container" id="groupsContainer">
+    </div>
+
+    <div class="footer">
+        <p>즐거운 점심시간 되세요! 😊</p>
+    </div>
+</div>
+
+<script src="lotto.js"></script>
+</body>
+</html>
