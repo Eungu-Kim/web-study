@@ -81,6 +81,11 @@ Servlet + JDBC 기반 이메일 리스트 CRUD 학습 프로젝트
 - 네이버 회원가입 화면 클론
 - HTML Form 구조 및 입력 요소 학습
 
+### 📂 java-practice
+
+- 자바 기초 실습
+- Array, For, While, Var, Method, Operation 등 기초 문법 실습
+
 ---
 
 ## 🧠 Study Focus
